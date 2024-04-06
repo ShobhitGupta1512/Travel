@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?html session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,12 +35,12 @@
 <!-- header section starts  -->
 
 <section class="header">
-<a href="home.php" class="logo"><div class="logo_n"><div><img src="images/logo2.png" height=100vh  width=110vh></div><div><b>E TRAVEL</b></div></div></a>
+<a href="home.html" class="logo"><div class="logo_n"><div><img src="images/logo2.png" height=100vh  width=110vh></div><div><b>E TRAVEL</b></div></div></a>
    <nav class="navbar">
-      <a href="home.php">home</a>
-      <a href="about.php">about</a>
-      <a href="package.php">package</a>
-      <a href="book.php" class="active">book</a>
+      <a href="home.">htmlome</a>
+      <a href="about.html">about</a>
+      <a href="package.html">package</a>
+      <a href="book.html" class="active">book</a>
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -59,14 +59,14 @@
 
    <h1 class="heading-title">book your trip!</h1>
 
-   <?php if (isset($_SESSION['success_message']) && !empty($_SESSION['success_message'])) { ?>
-      <div class="success-message" style="margin-bottom: 20px;font-size: 20px;color: green;"><?php echo $_SESSION['success_message']; ?></div>
-      <?php
+   <?html if (isset($_SESSION['success_message']) && !empty($_SESSION['success_message'])) { ?>
+      <div class="success-message" style="margin-bottom: 20px;font-size: 20px;color: green;"><?html echo $_SESSION['success_message']; ?></div>
+      <?html
       unset($_SESSION['success_message']);
    }
    ?>
 
-   <form action="book_form.php" method="post" class="book-form">
+   <form action="book_form.html" method="post" class="book-form">
 
       <div class="flex">
          <div class="inputBox">
@@ -114,10 +114,10 @@
    <div class="box-container">
       <div class="box">
          <h3>quick links</h3>
-         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="package.php"> <i class="fas fa-angle-right"></i> package</a>
-         <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="package.html"> <i class="fas fa-angle-right"></i> package</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> book</a>
       </div>
       <div class="box">
          <h3>extra links</h3>
@@ -150,5 +150,16 @@
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p>
+        HELLO
+        <a href="about.html">hELLO</a>
+    </p>
 </body>
 </html>
